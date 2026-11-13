@@ -1,0 +1,2224 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/tabby.min.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/quarto-contrib/timeline-0.1.0/timeline.js"></script>
+<link href="index_files/libs/quarto-contrib/timeline-0.1.0/timeline.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
+
+  <meta name="dcterms.date" content="2026-10-11">
+  <title>Enjeux de la « Science Ouverte »</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-1c89b37eac0ecc3cac16982b5487a162.css">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-opacity="0.5" data-background-size="contain" data-fullscreen="false" class="quarto-title-block center">
+  <h1 class="title">Enjeux de la « Science Ouverte »</h1>
+  <p class="subtitle">GS Humanités &amp; Sciences du Patrimoine <br><br> Journée de rentrée des doctorants</p>
+
+<div class="quarto-title-authors">
+</div>
+
+  <p class="date">10/11/2026</p>
+</section>
+<section id="mode-demploi-de-ce-diaporama" class="slide level2 center">
+<h2>Mode d’emploi de ce diaporama</h2>
+<ul>
+<li class="fragment">La navigation se fait par les flèches directionnelles</li>
+<li class="fragment">Appuyer sur M affiche le menu et permet de naviguer depuis la table des matières</li>
+<li class="fragment">Une version «&nbsp;semi-rédigée&nbsp;» de cette présentation est disponible ici en HTML et ici en PDF</li>
+<li class="fragment">La <a href="#/et-maintenant">dernière partie</a> présente des ressources complémentaires (biblio-sitographie), une liste de formations doctorales pertinentes, ainsi que les contacts d’interlocuteurs potentiels</li>
+</ul>
+</section>
+<section id="doù-je-parle" class="slide level2 center">
+<h2>D’où je parle ?</h2>
+<ul>
+<li class="fragment">Chargé d’ingénierie éditoriale pour les Presses Ouvertes de Paris Saclay</li>
+<li class="fragment">En poste à la <a href="https://www.bib.uvsq.fr/">DBIST</a> de l’UVSQ, au <a href="https://www.bib.uvsq.fr/presentation-du-service-a-la-recherche-et-pour-la-science-ouverte">pôle des Services à la Recherche et pour la Science Ouverte</a></li>
+<li class="fragment">Un pied dans l’<strong>édition scientifique en libre accès</strong></li>
+<li class="fragment">Et l’autre dans l’<strong>accompagnement de projets de recherche</strong> : j’accompagne les chercheurs dans la gestion de leurs données de recherche</li>
+<li class="fragment">Deux activités liées à la <em>Science Ouverte</em>, donc</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Chargé d’ingéniere éditoriale pour les Presses Ouvertes de Paris Saclay (des presses universitaires en cours de création)</li>
+<li>En poste à la <a href="https://www.bib.uvsq.fr/">DBIST</a> de l’UVSQ, au <a href="https://www.bib.uvsq.fr/presentation-du-service-a-la-recherche-et-pour-la-science-ouverte">pôle des Services à la Recherche et pour la Science Ouverte</a></li>
+<li>Un pied dans l’<strong>édition scientifique en libre accès</strong></li>
+<li>Et l’autre dans l’<strong>accompagnement de projets de recherche</strong> : j’accompagne les chercheurs dans la gestion de leurs données de recherche</li>
+<li>Deux activités liées à la <em>Science Ouverte</em>, donc</li>
+</ul>
+<p>J’ai donc un pied dans l’édition scientifique en libre accès, et l’autre dans l’accompagnement de certains projets de recherche menés à l’Université – j’interviens surtout au début des projets, pour aider les porteurs à planifier la gestion des données de recherche qui seront collectées ou créées dans le cadre de leur projet.</p>
+<p>Dans les deux cas, le travail que je fais est très lié à la Science Ouverte, qui fait donc l’objet de mon intervention ici.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="plan" class="slide level2">
+<h2>Plan</h2>
+<ul>
+<li class="fragment"><a href="#/science-ouverte">La “science ouverte” : contexte, éléments de définition</a></li>
+<li class="fragment"><a href="#/ouvrir-les-publications-lopen-access">Publier en accès ouvert</a> :
+<ul>
+<li class="fragment"><a href="#/quatre-tendances-de-lédition-scientifique">tendances récentes dans l’édition scientifique</a></li>
+<li class="fragment"><a href="#/la-voie-verte-lauto-archivage">voie “verte”</a> = auto-archivage des publications</li>
+<li class="fragment"><a href="#/la-voie-dorée-revues-et-livres-en-accès-ouvert">voies “dorée” et “diamant”</a> = revues en accès ouvert</li>
+</ul></li>
+<li class="fragment"><a href="#/les-données-de-la-recherche">Ouvrir ses données de recherche</a> :
+<ul>
+<li class="fragment"><a href="#/définitions-1">Définitions</a></li>
+<li class="fragment"><a href="#/des-données-pour-les-shs-et-les-humanités">Des “données” pour les SHS et les humanités ?</a> :
+<ul>
+<li class="fragment"><a href="#/le-plan-de-gestion-de-données-pgd">Le plan de gestion des données</a></li>
+<li class="fragment"><a href="#/les-principes-fair">FAIR</a> : principes de bonne gestion</li>
+<li class="fragment"><a href="#/où-déposer-ses-données">Entrepôts de données</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="quelques-questions-pratiques" class="slide level2">
+<h2>Quelques questions pratiques</h2>
+<ol type="1">
+<li class="fragment">Votre thèse (version de soutenance) sera-t-elle diffusée <strong>en libre accès</strong> ?</li>
+</ol>
+<div class="fragment">
+<p>Pour l’ED Sciences Sociales et Humanités, sur les 6 dernières années :</p>
+<p><strong>95 thèses en libre accès sur 145 soutenues</strong> → voir <a href="https://theses.fr/resultats?filtres=%255B%2525C3%252589coles%252520doctorales%25253D%252522%2525C3%252589cole%252520doctorale%252520Sciences%252520sociales%252520et%252520humanit%2525C3%2525A9s%252520(Versailles%252520%25253B%2525202020-....)%252522~Statut%25253D%252522soutenue%252522~%2525C3%252589tablissements%25253D%252522universit%2525C3%2525A9%252520Paris-Saclay%252522%255D&amp;q=*&amp;page=1&amp;nb=10&amp;tri=dateDesc&amp;domaine=theses">ici</a></p>
+</div>
+<ol start="2" type="1">
+<li class="fragment"><p>Votre premier article sera-t-il accessible à tous ? Gratuitement ? Devrez-vous <strong>payer</strong> pour publier ?</p></li>
+<li class="fragment"><p>Pouvez-vous <strong>diffuser vous-même</strong> un article déjà publié en revue ?</p></li>
+<li class="fragment"><p>À quelles conditions pouvez-vous partager vos « données » ?</p></li>
+</ol>
+<aside class="notes">
+<p>Pour bien comprendre ce qui est en jeu dans la Science Ouverte, voici quelques questions pratiques auxquelles vous devriez être confrontés dans les années qui viennent :</p>
+<ul>
+<li>votre thèse - dans sa version de soutenance - sera-t-elle diffusée en libre accès ? Pour l’ED Sciences Sociales et Humanités, 95 thèses l’ont été sur 145 soutenues à ces 6 dernières années,</li>
+<li>le premier article que vous publierez dans une revue sera-t-il accessible à tout le monde ? Uniquement aux abonnés de cette revue ? Devrez-vous payer des frais de publication ?</li>
+<li>avez-vous le droit de diffuser vous-mêmes un article dont vous êtes l’auteur dès lors que celui-ci a déjà été publié dans une revue ?</li>
+<li>si vous collectez (voire créez) des “données” dans le cadre de votre thèse, qu’allez-vous en faire ?</li>
+</ul>
+<p>-&gt; Toutes ces questions relèvent de la Science Ouverte. Vous êtes donc embarqués dedans.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section>
+<section id="science-ouverte" class="title-slide slide level1 center">
+<h1>Science Ouverte ?</h1>
+<aside class="notes">
+<p>Il y a plusieurs manières de parler de la Science Ouverte et de ses enjeux, on pourrait présenter :</p>
+<ul>
+<li><p>des outils, des méthodes, des recommandations - qui parfois deviennent des normes,</p></li>
+<li><p>les infrastructures numériques qui sous-tendent la science ouverte et la rendent possible,</p></li>
+<li><p>des enjeux politiques, financiers, voire épistémologiques</p></li>
+<li><p>des acteurs et des réseaux, en général ou pour une discipline en particulier…</p></li>
+</ul>
+<p>Je vais tenter d’évoquer rapidement tous ces sujets, en privilégiant bien sûr certains aspects, pour qu’à l’issue de cette heure vous ayez une vue générale de cet objet… en même temps que des conseils pratiques qui pourront vous servir dans le cadre de votre travail de thèse d’abord, mais aussi pour la suite de votre carrière.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="un-contexte-les-mutations-de-la-communication-savante" class="slide level2">
+<h2>Un contexte : les mutations de la communication savante</h2>
+<ul>
+<li class="fragment">La Science Ouverte est indissociable de la <strong>numérisation de l’édition scientifique</strong> (depuis ~25 ans)</li>
+<li class="fragment">La plupart des revues académiques sont désormais accessibles en ligne</li>
+<li class="fragment">Les livres le sont de plus en plus</li>
+<li class="fragment">L’accès à ces publications se fait via les plateformes des éditeurs, ou via des portails de revues et d’<em>ebooks</em> (type CAIRN)</li>
+<li class="fragment">De nouvelles “infrastructures de communication savante” <span class="citation" data-cites="mounierPlateformesDiffusionNumerique2020">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Mounier 2020</a>)</span> voient le jour pour répondre à des besoins particuliers
+<ul>
+<li class="fragment">→ HAL, OpenEdition, Nakala, Recherche Data Gouv…</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>Une remarque préliminaire : la Science Ouverte n’est pas séparable des mutations du champ de l’édition scientifique induites, depuis au moins 25 ans, par la numérisation.</p>
+<p>La plupart des revues scientifiques sont désormais consultables en ligne, une part de plus en plus importante des livres l’est également.</p>
+<p>A côté des grands portails numériques des éditeurs se développent des “infrastructures de communication savante” qui jouent chacune un rôle particulier. En France, pensez à HAL, à Persée, à OpenEdition, à Nakala ou Recherche Data Gouv. Je reviendrai sur celles-ci.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="la-science-ouverte-combien-de-définitions" class="title-slide slide level1 center">
+<h1>La “Science Ouverte”, combien de définitions ?</h1>
+<aside class="notes">
+<p>Vous avez peut-être - sans doute - déjà entendu ou lu ce terme de “Science Ouverte”… Ou peut-être pas. En toute rigueur méthodologique, je vais donc commencer par quelques défintions. Évidemment, il y en a plusieurs ; elles sont souvent très longues. Voici quelques extraits parlants.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<div class="timeline vertical-alt fragment-slide tl-label-badge">
+<div class="event" data-label="2018">
+<blockquote>
+<p>La science ouverte est la diffusion sans entrave des <span class="fragment highlight-blue">publications et des données de la recherche</span>. Elle s’appuie sur l’opportunité que représente la mutation numérique pour développer l’accès ouvert aux publications et – autant que possible – aux données de la recherche.</p>
+</blockquote>
+<p><br></p>
+<p>(Plan National pour la Science Ouverte, 2018)</p>
+</div>
+<div class="event fragment" data-label="2021">
+<blockquote>
+<p>La science ouverte est la diffusion sans entrave des <span class="fragment highlight-blue">résultats, des méthodes et des produits de la recherche scientifique</span>. Elle s’appuie sur l’opportunité que représente la mutation numérique pour développer l’accès ouvert aux publications et – autant que possible – aux données, <span class="fragment highlight-blue">aux codes sources et aux méthodes de la recherche</span>.</p>
+</blockquote>
+<p><br></p>
+<p>(Plan National pour la Science Ouverte, 2021)</p>
+</div>
+<div class="event fragment" data-label="9 décembre 2021">
+<blockquote>
+<p>La science ouverte s’entend comme un concept inclusif qui englobe différents mouvements et pratiques visant à rendre les connaissances scientifiques multilingues, librement accessibles à tous et réutilisables par tous, à renforcer la collaboration scientifique et le partage des informations au profit de la science et de la société, ainsi qu’à <span class="fragment highlight-blue">ouvrir les processus de création, d’évaluation</span> et de diffusion des connaissances scientifiques aux <span class="fragment highlight-blue">acteurs de la société</span>. au-delà de la communauté scientifique traditionnelle.</p>
+</blockquote>
+<p><br></p>
+<p>(UNESCO 2021)</p>
+</div>
+<div class="event fragment" data-label="5 février 2026">
+<blockquote>
+<p>La science ouverte repose sur un principe essentiel qui consiste à rendre accessible, autant que possible, les méthodes, les <span class="fragment highlight-blue">matériaux</span> et les résultats de la recherche. Elle amplifie le rayonnement de la recherche dans le monde académique et dans la société, contribue à améliorer la <span class="fragment highlight-blue">reproductibilité</span>, la préservation et la réutilisation des matériaux de la recherche, et renforce <span class="fragment highlight-blue">l’intégrité et la transparence</span> du processus scientifique.</p>
+</blockquote>
+<p><br></p>
+<p>(Stratégie de Science Ouverte, 2026)</p>
+</div>
+</div>
+</section>
+<section id="les-piliers-de-la-science-ouverte" class="slide level2 center">
+<h2>Les “piliers” de la Science Ouverte</h2>
+<p>D’après <span class="citation" data-cites="bastinOpenScienceWelcome2026">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Bastin et al. 2026</a>)</span></p>
+<ul>
+<li class="fragment"><strong>Open Access</strong> : publier en libre accès, pour tous, sans abonnement</li>
+<li class="fragment"><strong>Open Data</strong> : partager les données de la recherche, de manière <em>aussi ouverte que possible, aussi fermée que nécessaire</em></li>
+<li class="fragment"><strong>Open Source</strong> : utiliser des logiciels libres (dont le code source est ouvert – et documenté)</li>
+<li class="fragment"><strong>Open Evaluation</strong> : rendre l’évaluation par les pairs (<em>peer review</em>) plus transparente voire plus collaborative</li>
+<li class="fragment"><strong>Open Education</strong> : partager largement les supports de cours et les outils pédagogiques</li>
+<li class="fragment"><strong>Science participative</strong> : impliquer les citoyens et la société civile dans les processus de recherche</li>
+</ul>
+<aside class="notes">
+<p>La science ouverte, c’est donc beaucoup de choses, un objet polymorphe. On peut commencer par en avoir une approche, disons, pragmatique, qui reprenne les défintions des acteurs eux-mêmes : en l’occurrence, les discours des institutions.</p>
+<p>Dans cette conception, on parle souvent des “piliers” de la science ouverte. Je vais reprendre les définitions qu’en donnent les collègues de l’Université de Liège qui me semblent assez clair.</p>
+<p>6 piliers :</p>
+<ul>
+<li>Open Access : Publier vos résultats de recherche en libre accès pour qu’ils soient lisibles par tous, sans abonnement.</li>
+<li>Open Data : Partager vos données de recherche (brutes ou traitées) de manière aussi ouverte que possible et aussi fermée que nécessaire.</li>
+<li>Open Source : Utiliser et développer des logiciels et du matériel libres et transparents [par ex. dont le code source ou les spécifications sont ouverts et documentés, ajout].</li>
+<li>Open Evaluation : Rendre l’évaluation par les pairs (peer review) plus transparente et collaborative.</li>
+<li>Open Education : Partager vos supports de cours et outils pédagogiques.</li>
+<li>Science participative : Impliquer les citoyens et la société civile dans les processus de recherche.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="quatre-barrières-à-lever" class="slide level2 center">
+<h2>Quatre “barrières” à lever</h2>
+<ol type="1">
+<li class="fragment">Aux <strong>publications</strong> elles-mêmes</li>
+<li class="fragment">Aux <strong>données</strong> qui sous-tendent les publications</li>
+<li class="fragment">Aux <strong>méthodes et outils</strong> appliqués à ces données</li>
+<li class="fragment">Aux <strong>processus d’évaluation par les pairs</strong> qui ont légitimé ces publications</li>
+</ol>
+<aside class="notes">
+<p>La science ouverte, c’est donc une manière de faire de la recherche, de la publier, de l’évaluer, de la diffuser, en faisant en sorte de lever, ou <em>a minima</em> de réduire, les barrières à l’accès aux résultats :</p>
+<ol type="1">
+<li>aux publications elles-mêmes ;</li>
+<li>aux données qui sous-tendent ces publications et sont fondamentales dans l’administration de la preuve ;</li>
+<li>aux méthodes et outils qui ont permis de traiter ces données ;</li>
+<li>et aux (processus) d’évaluation par les pairs qui ont légitimé, scientifiquement, les publications.</li>
+</ol>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-1" class="slide level2" data-fullscreen="true">
+<h2></h2>
+<p><img data-src="img/UNESCO-Open_science-pillars-fr.png" class="full-height"></p>
+<div class="legende">
+<p>Les “piliers de la Science Ouverte” d’après l’UNESCO</p>
+<ul>
+<li class="fragment">Transparence des méthodes et reproductibilité des résultats</li>
+<li class="fragment">Relations entre science et société</li>
+<li class="fragment">Remise en cause des hiérarchies implicites dans la production du savoir</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Mais ce n’est pas seulement ça, la Science Ouverte. La conception qu’en a l’UNESCO, par exemple, est assez large. Voyez ce graphique qui la résume</p>
+<p>-&gt; Graphique UNESCO : cf.&nbsp;les items de gauche et du bas. Disent une certaine ambition.</p>
+<p>Avec ces deux derniers items, en particulier l’inclusion des sciences participatives dans la définition de la science ouverte, vous voyez qu’on va au-delà des questions de diffusion, d’accès, de transparence ou de reproductibilité des recherches : on (entre plus profondément) dans les relations entre science et société, jusqu’à remettre en cause les hiérarchies (ou les positions) implicites dans la production du savoir.</p>
+<p>-&gt; Revenir sur tous ces points nous prendrait trop de temps ; pour l’essentiel, je vais me borner aux deux premiers : l’accès ouvert (ou libre) aux publications et aux données de la recherche. Je mentionnerais tout de même en passant la question de l’évaluation de la recherche.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="un-objet-social" class="slide level2">
+<h2>Un objet social…</h2>
+<p>La Science Ouverte, c’est aussi :</p>
+<ul>
+<li class="fragment">un ensemble de méthodes et de recommandations</li>
+<li class="fragment">une certaine conception de la communication savante</li>
+<li class="fragment">un écosystème d’infrastructures numériques liées entre elles</li>
+<li class="fragment">le lieu de rapports de force (et d’argent)</li>
+<li class="fragment">un « savoir d’institution » <span class="citation" data-cites="laboulaisDenaturaliserScienceOuverte2023">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Laboulais 2023</a>)</span></li>
+<li class="fragment">une politique publique assumée</li>
+<li class="fragment">un <span class="fragment highlight-blue">cadre légal</span></li>
+<li class="fragment">et un objet… <strong>de recherche</strong></li>
+</ul>
+<aside class="notes">
+<p>Voilà pour l’approche, disons, pragmatique, où j’ai essayé de préciser la définition commune de la science ouverte. Mais la Science Ouverte, c’est aussi, désormais, un objet social, qui comme tel cristallise des discours complexes et parfois contradictoires. Disons que c’est aussi, par exemple :</p>
+<ul>
+<li>un ensemble de méthodes et de recommandations</li>
+<li>une conception (plus ou moins explicite) de la communication savante</li>
+<li>un écosystème d’infrastructures numériques liées entre elles</li>
+<li>un jeu de rapports de force (et d’argent)</li>
+<li>un “savoir d’institution” (Laboulais), c’est-à-dire un savoir qui construit une forme d’autorité afin de légitimer ensuite l’action des institutions</li>
+<li>une politique publique assumée</li>
+<li>un cadre légal</li>
+<li>un objet… de recherche</li>
+</ul>
+<p>« Ces savoirs d’institution sont définis comme ceux par lesquels « se construisent, s’incarnent et se naturalisent des formes d’autorité qui légitiment l’action des institutions ». Steve Bernardin, Étienne Penissat, «Savoirs d’institution», dans Hélène Michel, Sandrine Lévêque, Jean-Gabriel Contamin (dir.), Rencontres avec Michel Offerlé, Vulaines-surSeine, Éditions du Croquant, 2018, p.398.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="en-construction-depuis-bientôt-40-ans" class="slide level2 center">
+<h2>… en construction depuis bientôt 40 ans…</h2>
+<ul>
+<li class="fragment">Une institutionnalisation progressive, avec :
+<ul>
+<li class="fragment">des groupes d’experts,</li>
+<li class="fragment">des prises de position à portée internationale,</li>
+<li class="fragment">des plans nationaux, déclinés localement.</li>
+</ul></li>
+<li class="fragment">Une série d’évolutions
+<ul>
+<li class="fragment">De l’<em>open access</em> à la Science Ouverte</li>
+<li class="fragment">Du militantisme d’un groupe de chercheurs aux exigences politico-institutionnelles</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>La Science Ouverte est donc cet objet social assez complexe, à plusieurs dimensions, qui se construit petit à petit depuis bientôt 40 ans, et qui se présente désormais sous une forme, disons, institutionnelle.</p>
+<ul>
+<li>Je les ai cités tout à l’heure : la France dispose par exemple depuis 2018 de Plans Nationaux pour la SO (le dernier en date s’appelle SSO, publié l’an dernier)</li>
+<li>Des agences de financement comme l’ANR exigent des chercheurs qu’ils se conforment à certaines exigences en matière de publication de leurs articles en accès ouvert, ainsi que de mise en ligne de leurs données de recherche (on verra ce que signifie ce terme tout à l’heure)</li>
+<li>Les Universités ou Organismes Nationaux de Recherche (CNRS…) proposent des déclinaisons locales de la politique ministérielle en la matière.</li>
+</ul>
+<p>Une série d’évolutions, qui ne sont pas seulement sémantiques…</p>
+<p>Cette institutionnalisation de la science ouverte - devenue un terme courant du lexique universitaire - a parfois tendance à aplatir les enjeux, ou à les présenter comme consensuels. Ce n’est pas tout à fait le cas, pourtant, mais je n’ai pas le temps de m’y attarder.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="hérité-de-questionnements-issus-des-stm" class="slide level2 center">
+<h2>… hérité de questionnements issus des STM</h2>
+<ul>
+<li class="fragment">Le cadre de référence historique : les <strong>STM</strong> (Sciences, Techniques, Médecine)</li>
+<li class="fragment">Pas les SHS ni les Humanités</li>
+<li class="fragment">Cet héritage se ressent dans certaines formulations officielles, dans la vision de l’édition ou des « données de recherche »</li>
+</ul>
+<aside class="notes">
+<p>Une précision : la science ouverte, dans sa définition et ses enjeux, hérite d’une histoire, et le cadre de référence de cette histoire a longtemps été quasi-exclusivement celui des STM (Sciences, Techniques et Médecine), non celui des SHS ou des Humanités. Cet héritage se ressent dans certaines formulations officielles, certaines considérations sur l’édition scientifique ou les “données de recherche”.</p>
+<p>Lorsque ce sera pertinent, j’essaierai donc d’apporter des précisions, ou des nuances, sur l’application de la Science Ouverte dans les Sciences Sociales et les Humanités.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="ouvrir-les-publications-lopen-access" class="title-slide slide level1 center">
+<h1>Ouvrir les publications : l’<em>open access</em></h1>
+
+</section>
+<section id="définitions" class="slide level2 center">
+<h2>Définitions</h2>
+<p><em>Open access</em> = <strong>accès ouvert</strong> ou <strong>libre accès</strong> (deux termes pas tout à fait équivalents).</p>
+<div class="fragment">
+<blockquote>
+<p>La littérature en accès ouvert est numérique, en ligne, gratuite et exempte de la plupart des restrictions en termes de droit d’auteur et de licence d’utilisation. <span class="citation" data-cites="suberQuestceQueLacces2016">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Suber 2016</a>)</span></p>
+</blockquote>
+</div>
+<div class="fragment">
+<blockquote>
+<p>Mise à disposition gratuite et immédiate sur internet de publications scientifiques, permettant à tous de lire, télécharger, copier, distribuer et utiliser ces travaux sans barrières financières ou techniques. (<a href="https://www.budapestopenaccessinitiative.org/read/">Budapest Open Access Initiative</a>, 2002)</p>
+</blockquote>
+</div>
+<div class="fragment">
+<blockquote>
+<p>Publier vos résultats de recherche en libre accès pour qu’ils soient lisibles par tous, sans abonnement. <span class="citation" data-cites="bastinOpenScienceWelcome2026">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Bastin et al. 2026</a>)</span></p>
+</blockquote>
+<aside class="notes">
+<p>Open Access = accès ouvert ou accès libre en français ; les deux termes ne sont pas tout à fait équivalents, mais je ne vais pas rentrer dans les détails et employer, par la suite, indifféremment l’un et l’autre.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="pourquoi-ouvrir" class="slide level2 center">
+<h2>Pourquoi «&nbsp;ouvrir&nbsp;» ?</h2>
+<p>À l’intersection de deux facteurs :</p>
+<ul>
+<li class="fragment">Le rôle des <strong>revues académiques</strong> (comité de lecture) : vecteurs de communication <strong>et</strong> instances de légitimation</li>
+<li class="fragment">Les <strong>grandes tendances de l’édition scientifique</strong> de ces 30 dernières années</li>
+</ul>
+<aside class="notes">
+<p>Non pas tant “pourquoi” au sens moral de : est-ce bien ou mal, ou au sens stratégique de : est-ce ou non avantageux pour votre carrière (ça l’est, les articles en libre accès sont statistiquement plus cités), qu’au sens de : comment en est-on arrivé là ?</p>
+<p>Pour bien comprendre, il faut avoir à l’esprit deux choses. Le mouvement de l’<em>open access</em> est à l’intersection de deux facteurs</p>
+<ul>
+<li>l’importance des revues “académiques”, c’est-à-dire dotées d’un comité de lecture constitué de spécialistes du domaine, à la fois comme vecteur de communication scientifique et comme instances de légitimation ;</li>
+<li>les grandes tendances de l’édition scientifique ces 30 dernières années.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="les-revues-comme-instances-de-légitimation" class="slide level2 center">
+<h2>Les revues comme instances de légitimation</h2>
+<ul>
+<li class="fragment"><p>En STM : l’article de revue est la forme attendue de la communication des découvertes</p></li>
+<li class="fragment"><p>Économie du prestige : publier dans <em>Science</em> ou <em>Nature</em> → crédit symbolique <strong>et</strong> crédits matériels (financements, doctorants, postes)</p></li>
+<li class="fragment"><p><img data-src="img/gingras.jpg" class="full-width"> <span class="citation" data-cites="gingrasTransformationsProductionSavoir2018">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Gingras 2018</a>)</span></p></li>
+<li class="fragment"><p>Hiérarchisation des revues</p></li>
+<li class="fragment"><p>Qualité scientifique mesurée selon le nombre de citations des articles, puis selon le <strong>facteur d’impact</strong> des revues</p></li>
+<li class="fragment"><p>Évaluation des chercheurs en fonction des revues où ils·elles publient</p></li>
+</ul>
+<aside class="notes">
+<p>Commençons par les revues : dans la plupart des disciplines des STM, ce sont les revues académiques qui constituent la forme attendue de la communication scientifique ; de la communication des découvertes.</p>
+<p>Par conséquent, il existe autour de ces revues savantes une forme de hiérarchie symbolique, une économie du prestige, où publier dans certaines revues (<em>Science</em>, <em>Nature</em>… peut-être les <em>Annales</em> en histoire) apporte de la reconnaissance - un crédit symbolique - en même temps que des “crédits” bien matériels (plus d’argent pour de nouvelles recherches, des étudiants pour servir d’assistants, des doctorants…).</p>
+<p>Ce que résume ce schéma, tiré d’un article d’Yves Gingras, un historien et sociologue des sciences.</p>
+<p>Il y a donc une fixation du prestige scientifique sur les revues, comme gardiennes des découvertes et du scientifiquement correct, en quelque sorte ; et hiérarchisation des revues entre elles, ce qui a longtemps servi pour évaluer la carrière des chercheurs - surtout en STM. C’est en partie en train de changer, en tout cas au niveau déclaratif.</p>
+<p>-&gt; c’est-à-dire qu’on mesure la qualité d’une publication au nombre de citations postérieures ; voire - ce qu’on appelle le <em>facteur d’impact</em> - au nombre moyen de citations des articles de la revue rapporté au nombre d’articles que publie la revue.</p>
+<p>Surtout, ce modèle qui valorise les articles au détriment d’autres types de communication scientifique (livres, chapitres, communications orales…), d’abord restreint aux STM, s’étend progressivement aux SHS – où la monographie est longtemps restée le mode de communication le plus valorisé. Cette tendance est particulièrement notable dans le monde anglo-saxon – voir partie suivante.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="quatre-tendances-de-lédition-scientifique" class="slide level2 center">
+<h2>Quatre tendances de l’édition scientifique</h2>
+<ol type="1">
+<li class="fragment"><p>Hausse massive des <strong>frais d’abonnement</strong></p></li>
+<li class="fragment"><p>Développement du <strong>libre accès</strong> aux publications</p></li>
+<li class="fragment"><p>Apparition des <strong>frais de publication (APC)</strong></p></li>
+<li class="fragment"><p><strong>Explosion</strong> du nombre de publications</p></li>
+<li class="fragment"><p>Et une cinquième, récente : l’<strong>IA générative</strong> pour relire, réécrire, traduire, générer, évaluer, résumer…</p></li>
+</ol>
+<aside class="notes">
+<p>J’en citerai 4 :</p>
+<ul>
+<li>l’augmentation (massive) des frais d’abonnement</li>
+<li>le développement du “libre accès” aux publications scientifique</li>
+<li>l’apparition des frais de publication (APC) facturés aux auteurs par les éditeurs</li>
+<li>l’explosion du nombre de publications (près de +50 % entre 2016 et 2022)</li>
+</ul>
+<p>Il faudrait en mentionner une cinquième, récente, susceptible de redéfinir totalement l’écosystème de l’édition scientifique : l’utilisation massive d’outils d’IA pour relire, réécrire, traduire, générer, évaluer, consulter, résumer les articles scientifiques.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="concentration-dans-lédition-et-crise-des-abonnements" class="slide level2 center">
+<h2>Concentration dans l’édition et «&nbsp;crise des abonnements&nbsp;»</h2>
+<ul>
+<li class="fragment">Modèle historique : ventes de livres et abonnements aux bibliothèques</li>
+<li class="fragment">Années 1990-2000 : <strong>concentration</strong> des revues internationales chez quelques éditeurs privés (Elsevier, Wiley, Springer ; en SHS : Sage, Taylor &amp; Francis)</li>
+<li class="fragment">Années 2000 : <strong>flambée des prix</strong> que les bibliothèques ne peuvent plus suivre</li>
+</ul>
+<aside class="notes">
+<p>Sur les abonnements : le modèle économique de l’édition savante, pendant très longtemps, a reposé sur la vente de livres et l’abonnement de revues auprès des bibliothèques universitaires.</p>
+<p>Au cours des années 90 puis 2000, on constate une concentration des revues académiques internationales (anglophones pour l’essentiel) dans les mains d’un petit nombre d’éditeurs privés et commerciaux : citons Elsevier, Wiley, Springer, ou pour les SHS Sage ou Taylor &amp; Francis. Certaines presses universitaires de taille importante (CUP, OUP) suivent le même modèle.</p>
+<p>PASSER LES GRAPHIQUES SUIVANTS SI PAS LE TEMPS</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-2" class="slide level2 scrollable">
+<h2></h2>
+<p>Pourcentage des articles publiés par les 6 plus gros éditeurs par rapport au reste des éditeurs, 1973–2013. STM à gauche, SHS à droite (fenêtre <em>scrollable</em>)</p>
+<p><img data-src="img/lariviere.png"></p>
+<p><span class="citation" data-cites="lariviereOligopolyAcademicPublishers2015">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Larivière et al. 2015</a>)</span></p>
+</section>
+<section id="section-3" class="slide level2 scrollable center">
+<h2></h2>
+<p>Prix moyen (en £) d’un abonnement à une revue (Royaume-Uni, 2000–2007)</p>
+<p><br></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Domaine</th>
+<th style="text-align: right;">2000</th>
+<th style="text-align: right;">2001</th>
+<th style="text-align: right;">2002</th>
+<th style="text-align: right;">2003</th>
+<th style="text-align: right;">2004</th>
+<th style="text-align: right;">2005</th>
+<th style="text-align: right;">2006</th>
+<th style="text-align: right;">2007</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Science</td>
+<td style="text-align: right;">612</td>
+<td style="text-align: right;">615</td>
+<td style="text-align: right;">644</td>
+<td style="text-align: right;">630</td>
+<td style="text-align: right;">703</td>
+<td style="text-align: right;">780</td>
+<td style="text-align: right;">933</td>
+<td style="text-align: right;">967</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Médecine</td>
+<td style="text-align: right;">334</td>
+<td style="text-align: right;">350</td>
+<td style="text-align: right;">377</td>
+<td style="text-align: right;">367</td>
+<td style="text-align: right;">396</td>
+<td style="text-align: right;">414</td>
+<td style="text-align: right;">451</td>
+<td style="text-align: right;">503</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Technologie</td>
+<td style="text-align: right;">330</td>
+<td style="text-align: right;">357</td>
+<td style="text-align: right;">385</td>
+<td style="text-align: right;">442</td>
+<td style="text-align: right;">493</td>
+<td style="text-align: right;">514</td>
+<td style="text-align: right;">600</td>
+<td style="text-align: right;">596</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sciences sociales</td>
+<td style="text-align: right;">244</td>
+<td style="text-align: right;">267</td>
+<td style="text-align: right;">324</td>
+<td style="text-align: right;">421</td>
+<td style="text-align: right;">428</td>
+<td style="text-align: right;">494</td>
+<td style="text-align: right;">474</td>
+<td style="text-align: right;">486</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Humanités</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">71</td>
+<td style="text-align: right;">66</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">98</td>
+<td style="text-align: right;">109</td>
+<td style="text-align: right;">121</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><a href="https://onlinelibrary.wiley.com/doi/10.1087/095315108X323866">Source</a> (table retouchée)</p>
+</section>
+<section id="soit-un-paradoxe" class="slide level2 center">
+<h2>Soit un paradoxe</h2>
+<ul>
+<li class="fragment">Les chercheurs, financés sur fonds publics, écrivent et évaluent des articles…</li>
+<li class="fragment">… pour des revues dont les abonnements sont à leur tour financés sur fonds publics</li>
+<li class="fragment">Ni les auteurs ni les évaluateurs ne sont rémunérés pour cette tâche</li>
+<li class="fragment">Les auteurs cèdent en revanche fréquemment leurs droits aux éditeurs</li>
+</ul>
+<aside class="notes">
+<p>On aboutit à cet étonnnant état de fait : des chercheurs, financés en France et ailleurs sur fonds publics, écrivent et évaluent des articles pour des revues ; puis, des fonds publics sont à nouveau employés pour leur permettre de lire les articles de ces mêmes revues.</p>
+<p>-&gt; il va de soi que les éditeurs de revue scientifique ne rémunèrent pas les auteurs des articles ; ni d’ailleurs les évaluateurs ; en revanche, il est courant qu’ils fassent signer des contrats d’exclusivité (de cession des droits patrimoniaux) sur les articles.</p>
+<p>Pour résumer, il y a à la fois perte de souveraineté sur la production savante, et perte d’accès tout court car il n’est plus possible de s’abonner à tout, les bibliothèques doivent faire des choix. Et, pour les pays pauvres, il est évidemment impossible de payer le prix demandé.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="naissance-de-lopen-access" class="slide level2">
+<h2>Naissance de l’<em>open access</em></h2>
+<ul>
+<li class="fragment">Une volonté des <strong>chercheurs eux-mêmes</strong> de reprendre la main sur la <strong>diffusion</strong> de leurs recherchers</li>
+<li class="fragment"><strong>1991</strong> : création d’<a href="https://arxiv.org/">arXiv</a> (physique, puis maths, informatique…)</li>
+<li class="fragment"><strong>2002</strong> : Déclaration de Budapest (<a href="https://www.budapestopenaccessinitiative.org/read/">BOAI</a>), qui propose deux solutions
+<ul>
+<li class="fragment">l’<strong>auto-archivage</strong></li>
+<li class="fragment">les <strong>revues en accès ouvert</strong></li>
+</ul></li>
+<li class="fragment">Ce sont toujours ces deux voies qui s’offrent à vous.</li>
+</ul>
+<aside class="notes">
+<p>C’est dans cet état d’esprit que naît l’<em>open access</em> : comme une tentative, menée par les chercheurs eux-mêmes, de reprendre la main sur, non pas tant sur l’édition elle-même, que sur la diffusion des publications de recherche.</p>
+<p>Voir la naissance d’arXiv en 1991 : un serveur de partage de publications en libre accès, d’abord en sciences physiques, puis étendu aux mathématiques, à l’informatique…</p>
+<p>S’il faut identifier un tournant, la Déclaration de Budapest de 2002 sur l’Open Access est sans doute un bon candidat. La déclaration propose deux voies possibles pour rendre la littérature scientifique accessible à tous gratuitement :</p>
+<ul>
+<li>l’auto-archivage</li>
+<li>les revues en accès ouvert</li>
+</ul>
+<p>Ces deux voies sont, de fait, devenues aujourd’hui les deux principales modalités de la diffusion d’articles scientifiques en accès ouvert. Ce sont donc les deux qui s’offrent à vous. Détaillons.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="la-voie-verte-lauto-archivage" class="title-slide slide level1 center">
+<h1>La voie “verte” : l’auto-archivage</h1>
+
+</section>
+<section id="principe" class="slide level2">
+<h2>Principe</h2>
+<div class="mval">
+<p>L’auteur dépose une copie de ses publications dans une <span class="fragment highlight-blue">archive ouverte</span> institutionnelle ou disciplinaire, sans coût ni pour l’auteur ni pour le lecteur.</p>
+</div>
+<p>→ C’est donc un modèle où l’auteur prend la responsabilité de rendre son texte accessible à tous, gratuitement.</p>
+<aside class="notes">
+<p>L’auto-archivage consiste, pour l’auteur, à déposer une copie de ses publications dans une archive ouverte institutionnelle ou disciplinaire. Ce modèle permet un accès gratuit aux travaux scientifiques, sans coût ni pour les auteurs ni pour les lecteurs.</p>
+<p>C’est donc un modèle où l’auteur est, lui-même, responsable de rendre son texte accessible à tous gratuitement.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="en-pratique-hal" class="slide level2">
+<h2>En pratique : <a href="https://hal.science/">HAL</a></h2>
+<ul>
+<li class="fragment"><p>Développée par le <strong>CCSD</strong> (CNRS, Inria, INRAE)</p></li>
+<li class="fragment"><p>Une <strong>archive</strong> (conservation à long terme), <strong>ouverte</strong> (texte intégral lisible par tous)</p></li>
+<li class="fragment"><p>Dépôt des articles, <em>preprints</em>, chapitres, livres, posters, présentations, logiciels (dans les limites du droit)</p></li>
+<li class="fragment"><p>Texte intégral <strong>non obligatoire</strong> : on peut ne déposer que les métadonnées</p></li>
+<li class="fragment"><p>Outil de <strong>centralisation</strong> de votre production : liste de publications, CV en ligne</p></li>
+<li class="fragment"><p>Lien avec <strong>ORCID</strong> : recommandé pour être visible</p></li>
+<li class="fragment"><p><strong>Votre thèse sera déposée dans HAL</strong> (par vos bibliothécaires).</p></li>
+</ul>
+<aside class="notes">
+<p>Qu’est-ce qu’une archive ouverte ? C’est, par exemple, HAL. En gros, HAL est l’archive ouverte dans laquelle les chercheurs rattachés aux laboratoires français sont incités à archiver leurs publications. Quelques-unes de ses caractéristiques :</p>
+<ul>
+<li>Hal est développée par le CCSD, une UAR dont les tutelles sont le CNRS, l’INRIA et l’INRAE.</li>
+<li>C’est une <em>archive</em> : c’est-à-dire que les documents qui y sont versés y sont conservés à long terme</li>
+<li>C’est une archive <em>ouverte</em> : n’importe qui peut lire ou télécharger le texte intégral des publications déposées</li>
+<li>Vous pouvez y déposer des articles, mais aussi tout type de communication scientifique : des manuscrits d’article (<em>preprints</em>), des chapitres de livre voire des livres entiers, des posters, des présentations, même des logiciels. Dans les limites du droit, bien sûr, mais je reviendrai là-dessus tout à l’heure.</li>
+<li>Mais vous n’êtes pas obligés de rendre disponible le texte intégral de votre publication, même si c’est évidemment mieux. Vous pouvez vous contenter de rentrer les métadonnées de la publi.</li>
+<li>HAL est aussi un outil de centralisation de votre production scientifique : que vous ayez ou non déposé le texte intégral, vous pouvez vous en servir pour télécharger une liste de vos publications, voire pour faire un CV en ligne</li>
+<li>Enfin, il est possible de relier HAL à d’autres services de signalement de votre CV scientifique, par exemple ORCID. Si vous souhaitez être un minimum visible sur le Web, il est recommandé de vous créer un compte ORCID (c’est gratuit) et de le relier à votre compte HAL.</li>
+</ul>
+<p>Votre thèse sera déposée dans HAL. Plus exactement : ce sont vos bibliothécaires qui s’en chargeront.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="une-question-de-droit" class="slide level2">
+<h2>Une question de droit</h2>
+<p>Peut-on déposer le texte intégral dans HAL si l’on a signé un contrat d’édition ?</p>
+<ul>
+<li class="fragment"><strong>Oui</strong></li>
+<li class="fragment">mais pas n’importe quelle publication, ni à n’importe quelles conditions</li>
+<li class="fragment">Type de contrat courant :
+<ul>
+<li class="fragment">cession des droits <strong>patrimoniaux</strong> (imprimer, publier, reproduire, vendre)</li>
+<li class="fragment">le droit <strong>moral</strong> est incessible</li>
+<li class="fragment">cession souvent <strong>exclusive</strong>, et de <strong>longue durée</strong></li>
+</ul></li>
+<li class="fragment">Certaines revues ne font pas signer de contrat : vous êtes alors libre</li>
+</ul>
+<aside class="notes">
+<p>Pouvez-vous déposer dans HAL le texte intégral d’une publication scientifique si vous avez par ailleurs signé un contrat avec un éditeur sur cette même publication ?</p>
+<p>Oui.</p>
+<p>Mais pas n’importe quelle publication, et pas à n’importe quelle condition.</p>
+<p>En règle générale, la publication d’un article de revue, d’un chapitre ou d’un livre chez un éditeur fait l’objet d’un contrat entre l’éditeur et l’auteur. (Certaines revues ne vous feront pas signer de contrat ; dans ce cas, vous êtes libre de faire ce que vous voulez de votre texte). Ce contrat stipule généralement que l’auteur cède à l’éditeur une partie de ses droits d’auteurs, en l’occurrence le volet dit patrimonial (le droit moral est, lui, incessible, inaliénable).</p>
+<p>En clair : l’auteur cède à l’éditeur les droits d’exploiter sa contribution, par exemple l’imprimer, la publier, la reproduire, et la vendre. En échange, l’éditeur peut s’engager à rémunérer l’auteur – ou non.</p>
+<p>Très souvent encore, cette cession des droits est à titre exclusif, et sur une longue durée. En somme : vous ne pouvez pas publier votre texte ailleurs.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="le-droit-de-publication-secondaire" class="slide level2">
+<h2>Le droit de publication secondaire</h2>
+<p>Loi pour une République numérique (n° 2016-1321), art. L. 533-4 du Code de la recherche.</p>
+<div class="mval smaller">
+<p>Lorsqu’un écrit scientifique issu d’une activité de recherche financée au moins pour moitié par [des fonds publics] est publié dans un périodique paraissant au moins une fois par an, son auteur dispose, même après avoir accordé des droits exclusifs à un éditeur, du droit de mettre à disposition gratuitement dans un format ouvert, par voie numérique, sous réserve de l’accord des éventuels coauteurs, la version finale de son manuscrit acceptée pour publication, dès lors que l’éditeur met lui-même celle-ci gratuitement à disposition par voie numérique ou, à défaut, à l’expiration d’un délai courant à compter de la date de la première publication. Ce délai est au maximum de six mois pour une publication dans le domaine des sciences, de la technique et de la médecine et de douze mois dans celui des sciences humaines et sociales.</p>
+<p>La version mise à disposition en application du premier alinéa ne peut faire l’objet d’une exploitation dans le cadre d’une activité d’édition à caractère commercial.</p>
+<p>[…]</p>
+<p>Les dispositions du présent article sont d’ordre public et toute clause contraire à celles-ci est réputée non écrite.</p>
+</div>
+<aside class="notes">
+<p>Il y existe pourtant une exception, une voie de contournement du contrat. Celle-ci a été introduite en France par, la loi n° 2016-1321 pour une République numérique du 7 octobre 2016.</p>
+<p>Cette loi (article L. 533-4, I, du Code de la recherche) crée ce qu’on appelle un “droit de publication secondaire”, qui s’énonce comme suit :</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<p>Pour un écrit issu d’une recherche <strong>financée au moins pour moitié sur fonds publics</strong>, publié dans un <strong>périodique</strong> (une revue) :</p>
+<ul>
+<li class="fragment">dépôt de la <strong>version acceptée pour publication</strong> (sans mise en page de l’éditeur)</li>
+<li class="fragment"><strong>6 mois</strong> (STM) ou <strong>12 mois</strong> (SHS) après la première publication, ou immédiatement si la publication est déjà en accès ouvert</li>
+<li class="fragment">accord des éventuels coauteurs</li>
+<li class="fragment">quoi que stipule le contrat par ailleurs</li>
+<li class="fragment">pas d’exploitation commerciale de la version déposée</li>
+</ul>
+<div class="fragment">
+<p>Pour les cas particuliers, le CCSD propose une page de ressources et formations, notamment juridiques <span class="citation" data-cites="HALFormationCategories">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Communication Scientifique Directe (CCSD) 2026</a>)</span>. Vous pouvez également <a href="#/vos-interlocuteurs-pour-toute-question-sur-la-science-ouverte">contacter</a> vos bibliothécaires, qui assurent un travail de curation dans HAL.</p>
+<aside class="notes">
+<p>En clair, cela signifie que les chercheurs financés au moins pour moitié sur des fonds publics (par exemple sur un contrat doctoral) peuvent déposer, dans HAL par exemple :</p>
+<ul>
+<li>la version “acceptée pour publication” d’un article de périodique (sans la mise en page ou feuille de style de l’éditeur, donc)</li>
+<li>à compter de 6 à 12 mois après sa publication initiale</li>
+<li>ou immédiatement si cette publication est déjà en accès ouvert</li>
+<li>quoi que stipulent par ailleurs les termes du contrat signé avec l’éditeur</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="un-compromis-donc-des-limites" class="slide level2">
+<h2>Un compromis, donc des limites</h2>
+<ul>
+<li class="fragment"><p>Pas de republication <strong>immédiate</strong> sur HAL</p></li>
+<li class="fragment"><p>Limité aux <strong>articles de périodiques</strong> (pas de livres ni de chapitres)</p></li>
+<li class="fragment"><p>Seulement les travaux <strong>financés sur fonds publics</strong></p></li>
+<li class="fragment"><p>Distinction STM / SHS : prise en compte de la <strong>spécificité de l’édition SHS en France</strong> ? Cf. <span class="citation" data-cites="anheimLeditionSciencesHumaines2020b">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Anheim et Foraison 2020</a>)</span></p></li>
+</ul>
+<aside class="notes">
+<p>Cette loi est historiquement le résultat d’un compromis entre la volonté de rendre les publications scientifiques accessibles à tous d’une part, et la prise en compte du modèle économique des éditeurs d’autre part. Ce qui explique certaines de ses limitations :</p>
+<ul>
+<li>elle ne permet pas de re-publier immédiatement sur HAL</li>
+<li>elle est limitée aux articles de périodiques</li>
+<li>elle ne s’applique qu’aux travaux de recherche financés sur fonds publics</li>
+</ul>
+<p>On notera la distinction STM / SHS, ainsi que l’exclusion des monographies et des chapitres du champ d’application de la loi : il s’agit d’une volonté de prendre en compte la spécificité de l’édition en SHS, en France surtout, caractérisé par :</p>
+<ul>
+<li>l’importance du livre comme vecteur de communication scientifique (par rapport à l’article)</li>
+<li>le maintien d’une forte activité de publication en français ou dans des revues francophones</li>
+<li>la place importante conservée par les éditeurs privés généralistes (Fayard, Le Seuil, La Découverte, et beaucoup d’autres plus petits) dans l’édition de livres de sciences humaines. Ailleurs, cette activité est surtout dévolue aux seuls éditeurs publics ou non commerciaux (type Presses Universitaires)</li>
+<li>le maintien d’une diffusion large de ces ouvrages en librairie, dont le tissu en France reste très important.</li>
+</ul>
+<p>(Cf. Anheim et Foraison)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="la-voie-dorée-revues-et-livres-en-accès-ouvert" class="title-slide slide level1 center">
+<h1>La voie dorée : revues et livres en accès ouvert</h1>
+
+</section>
+<section id="le-principe" class="slide level2">
+<h2>Le principe</h2>
+<ul>
+<li class="fragment">Deuxième voie de Budapest : des revues <strong>immédiatement accessibles</strong>, sans frais pour le lecteur</li>
+<li class="fragment">Rupture avec le modèle standard : des <strong>abonnements</strong> payés par les bibliothèques</li>
+<li class="fragment">Aujourd’hui : environ la <strong>moitié</strong> de la production mondiale paraît en <em>open access</em> (estimations variables selon les bases et disciplines)</li>
+<li class="fragment">En ajoutant l’auto-archivage : l’accès ouvert est <strong>majoritaire</strong></li>
+</ul>
+<aside class="notes">
+<p>C’était la deuxième voie recommandée par la Déclaration de Budapest : la création de nouvelles revues dont les textes seraient immédiatement accessibles sans frais pour le lecteur. C’est donc une rupture avec le principe des abonnements (payés par les bibliothèques universitaires).</p>
+<p>C’était en 2002. Je vous passe un certain nombre de débats et de détails, voyons ce qu’il en est aujourd’hui. Les estimations varient - il y a des biais dans toutes les bases bibliométriques utilisées, et cela dépend évidemment des disciplines -, mais le consensus est clair : environ la moitié de la production scientifique mondiale est aujourd’hui publiée dans des revues en <em>open access</em>. Si l’on y ajoute les publications auto-archivées, l’accès ouvert est donc nettement majoritaire.</p>
+<p>Mais à quel prix ?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="les-apc" class="slide level2">
+<h2>Les APC</h2>
+<ul>
+<li class="fragment">Marché <strong>oligopolistique</strong> (STM, et SHS anglophones en partie)</li>
+<li class="fragment">Les éditeurs n’ont pas particulièrement renoncé au profit : ils ont changé de modèle</li>
+<li class="fragment"><strong>APC</strong> : l’auteur participe aux frais pour publier en accès ouvert immédiat</li>
+<li class="fragment">Sommes modestes au départ, mais en hausse depuis 10 ans :
+<ul>
+<li class="fragment"><em>Nature</em> ≈ 10 850 €</li>
+<li class="fragment"><em>Past and Present</em> ≈ 4 355 €</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>La question qui demeure est : à quel prix ? Je l’ai rappelé tout à l’heure, l’édition scientifique mondiale est un marché oligopolistique, au moins pour les STM, et dans une certaine mesure pour les SHS anglophones : une dizaine de grands éditeurs sont propriétaires de la grande majorité des revues. Ces éditeurs n’ont pas renoncé par magie à faire des profits ; ils ont en revanche changé de modèle économique, en introduisant les frais de publication (APC).</p>
+<p>Le principe : si vous êtes l’auteur d’un article et que vous souhaitez le publier en accès ouvert immédiatement, l’éditeur vous demandera une participation aux frais. Au départ, les sommes étaient modestes. Elles ont très largement augmenté ces 10 dernières années.</p>
+<p>Pour vous donner un ordre d’idée, si vous souhaitez publier dans <em>Nature</em>, l’une des revues les plus prestigieuses en STM, il vous en coûtera aujourd’hui environ 10850€.</p>
+<p>Pour <em>Past and Present</em>, c’est 4355€.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-5" class="slide level2 scrollable">
+<h2></h2>
+<p>Total des APC (frais de publication) perçus par revue entre 2015 et 2018 - Top 50 <span class="citation" data-cites="butlerOligopolysShiftOpen2023">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Butler et al. 2023</a>)</span> (diapo scrollable)</p>
+<p><img data-src="img/butler.png"></p>
+</section>
+<section id="section-6" class="slide level2 scrollable">
+<h2></h2>
+<p>Total des APC perçus par les revues, par grand champ disciplinaire, entre 2015-2018. <span class="citation" data-cites="butlerOligopolysShiftOpen2023">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Butler et al. 2023</a>)</span> (diapo scrollable)</p>
+<p><img data-src="img/butler2.png"></p>
+</section>
+<section id="particularités-de-lédition-en-shs" class="slide level2">
+<h2>Particularités de l’édition en SHS</h2>
+<p>Diversité des structures éditoriales des revues en SHS en France, à travers les plateformes OpenEdition et Cairn.info en juin 2019 :</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 43%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type d’acteur</th>
+<th>OpenEdition (568 revues)</th>
+<th>Cairn.info (450 revues)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Éditeurs privés</td>
+<td>12 %</td>
+<td>56 %</td>
+</tr>
+<tr class="even">
+<td>Laboratoires, UMR</td>
+<td>39 %</td>
+<td>12 %</td>
+</tr>
+<tr class="odd">
+<td>Presses universitaires et entités publiques</td>
+<td>30 %</td>
+<td>8 %</td>
+</tr>
+<tr class="even">
+<td>Associations, sociétés savantes</td>
+<td>19 %</td>
+<td>24 %</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>D’après <span class="citation" data-cites="chartronStructureDefisEconomiques2020">Chartron (<a href="#/bibliographie" role="doc-biblioref" onclick="">2020</a>)</span> (table retouchée)</p>
+<aside class="notes">
+<p>Parler des livres serait long, je renvoie au livre déjà cité d’Etienne Anheim et Livia Floraison (disponible gratuitement sur… OpenEdition). Voici quelques précisions sur le paysage des revues (en 2019).</p>
+<p>Vous le voyez : les revues gérées par des éditeurs publics vont plutôt sur OpenEdition, celles des éditeurs privés plutôt sur Cairn. Il y a d’autres modalités encore (pas de diffusion numériques, sites propres, sites web gérés par des universités, sites d’éditeurs comme Classiques Garnier…)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="cairn-un-modèle-privé" class="slide level2 center">
+<h2>CAIRN : un modèle privé</h2>
+<ul>
+<li class="fragment"><p>un portail fondé par des éditeurs privés (La Découverte entre autres)</p></li>
+<li class="fragment"><p>qui aggrège des contenus d’autres éditeurs</p></li>
+<li class="fragment"><p>et se finance sur les abonnements (de bibliothèques).</p></li>
+<li class="fragment"><p>ce n’est pas de l’<em>open access</em>.</p></li>
+</ul>
+<aside class="notes">
+<p>CAIRN / OpenEdition : la différence est simple, le 1er est un portail fondé par des éditeurs privés (La Découverte entre autres) qui aggrège des contenus d’autres éditeurs et se finance sur les abonnements (de bibliothèques). Ce n’est pas de l’<em>open access</em>.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="openedition-le-modèle-diamant" class="slide level2">
+<h2><a href="https://www.openedition.org/">OpenEdition</a> : le modèle “diamant”</h2>
+<ul>
+<li class="fragment"><p>une infrastructure publique,</p></li>
+<li class="fragment"><p>la plupart des publications sont disponibles en libre accès</p></li>
+<li class="fragment"><p>le lecteur ne paie rien, l’auteur non plus</p></li>
+<li class="fragment"><p>le financement est assuré par des subventions publiques d’une part, par des abonnements <em>freemium</em> de l’autre (certaines bibliothèques paient pour accéder à quelques services supplémentaires, par exemple l’accès aux PDF)</p></li>
+<li class="fragment"><p>ce type de modèle économique est appelé <em>open access</em> “diamant”.</p></li>
+</ul>
+<aside class="notes">
+<p>OpenEdition, c’est une infrastructure publique, gérée par une Unité d’Appui et de recherche qui dépend, entre autres, du CNRS. Ce n’est pas un éditeur, plutôt un diffuseur, qui fonctionne selon deux principes :</p>
+<ul>
+<li>la plupart des publications sont disponibles en libre accès</li>
+<li>le lecteur ne paie rien, l’auteur non plus</li>
+<li>le financement est assuré par des subventions publiques d’une part, par des abonnements <em>freemium</em> de l’autre (certaines bibliothèques paient pour accéder à quelques services supplémentaires, par exemple l’accès aux PDF)</li>
+</ul>
+<p>-&gt; c’est ce qu’on appelle le modèle “diamant”. C’est d’ailleurs ce qu’on est en train de développer aux Presses de Paris-Saclay, qui fonctionneront selon ce modèle.</p>
+<p>OpenEdition aujourd’hui :</p>
+<p>16673 livres 676 revues 5141 “carnets” (Hypothèses = blogs de chercheurs, de projets ou de laboratoires) 62953 événements (sur Calenda.org)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="pops-presses-ouvertes-de-paris-saclay" class="slide level2">
+<h2>POPS : Presses Ouvertes de Paris-Saclay</h2>
+<ul>
+<li class="fragment">publient des revues et des livres nativement numériques (pas de papier),</li>
+<li class="fragment">selon le modèle de l’<strong>accès ouvert diamant</strong> : gratuit pour les lecteurs et sans frais pour les auteurs ;</li>
+<li class="fragment">sont ouvertes à toutes les disciplines du périmètre étendu Paris-Saclay (Saclay, Versailles, Evry, MSH…) ;<br>
+</li>
+<li class="fragment">répondent aux critères de qualité de l’édition scientifique (évaluation par les pairs, transparence, intégrité, accessibilité…) ;</li>
+<li class="fragment">sont pilotées par la DIBISO de l’Université de Paris-Saclay.</li>
+</ul>
+<aside class="notes">
+<p>Diapo au présent… Lancement : d’ici à la fin de l’année, j’espère</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="les-données-de-la-recherche" class="title-slide slide level1 center">
+<h1>Les données de la recherche</h1>
+
+</section>
+<section id="définitions-1" class="slide level2 center">
+<h2>Définition(s)</h2>
+<div class="fragment">
+<div class="mval">
+<p><span class="fragment highlight-red">Enregistrements factuels</span> (chiffres, images, sons, vidéos…), qui sont utilisés comme sources principales pour la recherche scientifique et sont également reconnus par la communauté scientifique comme nécessaires pour <span class="fragment highlight-red">valider</span> les résultats de recherche.</p>
+</div>
+<p><a href="https://www.oecd.org/fr/science/inno/38500823.pdf">Principes et lignes directrices pour l’accès aux données de la recherche financée sur fonds publics</a> (2007 → fait toujours référence)</p>
+</div>
+</section>
+<section id="section-7" class="slide level2 center">
+<h2></h2>
+<div class="mval">
+<p>Les données de la recherche désignent les <span class="fragment highlight-red">informations</span>, et en particulier <span class="fragment highlight-red">les faits ou chiffres collectés</span> pour être analysés et traités pour alimenter des réflexions, discussions ou calculs. Dans un contexte de recherche, ces données sont, par exemple, des statistiques, des résultats d’expériences, des mesures, des observations sur le terrain, des résultats d’enquêtes, des enregistrements d’entretiens ou des images. Il s’agit plus spécifiquement de données disponibles sous forme numérique.</p>
+</div>
+<p><a href="https://www.enssib.fr/bibliotheque-numerique/documents/66433-lignes-directrices-pour-le-libre-acces-aux-publications-scientifiques-et-aux-donnees-de-la-recherche-dans-horizon-2020.pdf">Lignes directrices pour le libre accès aux publications scientifiques et aux données de la recherche dans Horizon 2020</a> (2016)</p>
+</section>
+<section id="section-8" class="slide level2 center">
+<h2></h2>
+<div class="mval">
+<p>Aux fins de la présente directive, on entend par « données de la recherche », des <span class="fragment highlight-red">documents</span> se présentant sous forme numérique, autres que des publications scientifiques, qui sont recueillis ou produits au cours d’activités de recherche scientifique et utilisés comme <span class="fragment highlight-red">éléments probants</span> dans le processus de recherche, ou dont la communauté scientifique admet communément qu’ils sont nécessaires pour valider des conclusions et résultats de la recherche.</p>
+</div>
+<p><a href="https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=uriserv:OJ.L_.2019.172.01.0056.01.FRA">Directive UE 2019/2014 concernant les données ouvertes, art. 2§9</a> (2019)</p>
+<aside class="notes">
+<p>Je vous avais l’avais promis tout à l’heure : commençons par définir de quoi on parle. Le problème : c’est sans doute encore plus difficile de définir précisément les “données de recherche” que la SO.</p>
+<p>Commenter les évolutions.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="en-résumé" class="slide level2">
+<h2>En résumé</h2>
+<ul>
+<li class="fragment"><p>Les données de la recherche sont définies comme l’unité de base sur laquelle s’appuie le raisonnement scientifique, unité qui sous-tend les hypothèses de recherche d’une part, l’administration de la preuve d’autre part.</p></li>
+<li class="fragment"><p>Ce sont des objets très hétérogènes, nécessairement <strong>numériques</strong>, complémentaires des publications proprement dites, mais qui peuvent exister indépendamment de ces dernières.</p></li>
+<li class="fragment"><p>Le terme est parfois trompeur, dans la mesure où les données ne sont pas “données” (mais captées, construites ou reconstuites).</p></li>
+<li class="fragment"><p>Dans certains champs, on préférera parler de <em>sources</em> ou de <em>matériaux</em>, non sans malentendus liés aux traditions épistémologiques ou méthodologiques disciplinaires.</p></li>
+</ul>
+</section>
+<section id="ouvrir-ses-données-de-recherche" class="slide level2 center">
+<h2>“Ouvrir” ses données de recherche ?</h2>
+<ul>
+<li class="fragment">Être transparent sur ses sources, ses méthodes, ses outils</li>
+<li class="fragment">Faciliter la reproduction des expériences (“crise de la reproductibilité”)</li>
+<li class="fragment">Faire émerger de nouveaux questionnements en agrégeant des données</li>
+</ul>
+<div class="fragment">
+<p>-&gt; Au départ, une notion très marquée par les STM.</p>
+<aside class="notes">
+<p>On l’a vu tout à l’heure, l’ouverture des données fait désormais partie intégrante des diverses stratégies de science ouverte. Pourquoi ? Il y a surtout deux arguments :</p>
+<ul>
+<li>Montrer les sources, les méthodes, les processus qui vont des données aux hypothèses (ou des hypothèses aux données) afin de rendre les preuves plus robustes</li>
+<li>Faciliter la reproduction des expériences (“crise de la reproductibilité”)</li>
+<li>Potentiellement, faire émerger de nouveaux questionnements en agrégeant des masses de données disparates (plus ou moins hétérogènes ou “interopérables”)</li>
+</ul>
+<p>-&gt; c’est, une nouvelle fois, un cadre de réflexion très marqué par les STM. Reste que c’est celui qui s’applique désormais. Célian le dira tout à l’heure : légalement, c’est l’ouverture des données qui doit être la règle, et la fermeture l’exception.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="des-données-pour-les-shs-et-les-humanités" class="slide level2">
+<h2>Des “données” pour les SHS et les humanités ?</h2>
+<ul>
+<li class="fragment">un corpus de texte</li>
+<li class="fragment">des compte-rendus d’entretien qualitatif</li>
+<li class="fragment">des transcriptions, par exemple de fonds d’archive (inventaire après décès, paléo…)</li>
+<li class="fragment">des “bases de données” : analyses de fréquence d’un terme, des données demographiques, statistiques, nb d’habitants et caracteristiques, sondages…</li>
+<li class="fragment">des données de localisation géographique…</li>
+<li class="fragment">du code informatique</li>
+</ul>
+<aside class="notes">
+<p>Données : l’adoption généralisée de ce terme pose un certain nombre de questions, notamment dans son extension aux SHS. Où l’on parle plutôt de matériaux…</p>
+<p>Le terme “données”, d’abord : ne serait-ce que parce que ces données ne sont pas donnés, mais “captées” (J. Drucker), médiées par des outils, liées à un contexte de production voire étroitement à une question de recherche en particulier.</p>
+<p>L’autre problème : réduire la méthode scientifique à un “travail sur les données” a tendance à araser les traditions épistémologiques propres à chaque discipline.</p>
+<p>Mais bon, pas grave. L’important – l’esprit plutôt que la lettre – dans la notion de “données de recherche” dans un contexte de Science Ouverte, c’est de combiner la réflexivité sur ses sources et ses pratiques d’une part, et quelques savoirs techniques d’autre part, liés à la gestion des données et à leur partage.</p>
+<p>En gros, il faut se demander : - quelles sont mes sources, mes matériaux, mes données ? - dans quelle mesure ces données sont-elles partageables ? - est-ce que les partager aiderait mes lecteurs à mieux comprendre ma démarches mes hypothèses, mes questionnements ? - ont-elles un statut de preuve ? Si oui, comment faciliter la reproduction de mes méthodes ou expériences ?</p>
+<p>Je propose, pour être un peu concret, une liste des types de données en SHS et Humanités :</p>
+<ul>
+<li>un corpus de texte -&gt; préférablement encodé</li>
+<li>des cr d’entretien qualitatif -&gt; idem et anonymises</li>
+<li>des transcriptions, par exemple de fonds d’archive (inventaire après décès, paléo…)</li>
+<li>des “bases de données” = tout ce qu’on peut mettre en série quantitative, la forme la plus courante étant celle du Tableur mais d’autres formats existent. Par exemple des analyses de fréquence d’un terme, des données demographiques, statistiques, nb d’habitants et caracteristiques, sondages…</li>
+<li>des données d’un système d’information géographique…</li>
+<li>du code informatique (cest un peu a part certes)</li>
+</ul>
+<p>On voit que, dans pas mal de cas, partager ses données, c’est une manière de valoriser ce qui, sinon, est garde pour soi, ou placé en annexes…</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="quelques-outils" class="title-slide slide level1 center">
+<h1>Quelques outils</h1>
+
+</section>
+<section id="le-plan-de-gestion-de-données-pgd" class="slide level2">
+<h2>Le Plan de Gestion de Données (PGD)</h2>
+<div class="mval">
+<p>Le Data Management Plan (DMP) ou Plan de Gestion de Données (PGD) est un <strong>document synthétique qui aide à organiser et anticiper toutes les étapes du <span class="fragment highlight-blue">cycle de vie</span> de la donnée</strong>. Il explique pour chaque jeu de données comment seront gérées les données d’un projet, depuis leur création ou collecte jusqu’à leur partage et leur archivage.</p>
+</div>
+<p><span class="filets right">DoRANum, <a href="https://doranum.fr/plan-gestion-donnees-dmp/plan-de-gestion-des-donnees-fiche-synthetique_10_13143_cgv4-0k53/">PGD : fiche synthétique</a>, publiée en 2017, mise à jour en 2023</span></p>
+</section>
+<section id="un-cycle-de-vie-de-la-donnée" class="slide level2" data-background-image="img/Cycle-vie-fr-PGD.png" data-background-size="contain" data-background-position="right">
+<h2>Un “cycle de vie” de la donnée ?</h2>
+<p><span class="absolute" style="top: 50%; ">(D’après une ressource de <a href="https://doranum.fr/enjeux-benefices/le-cycle-de-vie-des-donnees-de-recherche_10_13143_gzj2-j593/">DoRANum</a>)</span></p>
+</section>
+<section id="section-9" class="slide level2 center">
+<h2></h2>
+<p>Concrètement, le PGD est <strong>un texte de réflexion et de cadrage</strong>, dont l’intérêt principal est qu’il force à se poser la question de la gestion des données – et de leur qualité – dès les premières phases d’un projet.</p>
+<ul>
+<li class="fragment">Penser la gestion des données dès le début</li>
+<li class="fragment">Assurer qualité, documentation, traçabilité</li>
+<li class="fragment">Préparer partage et réutilisation</li>
+<li class="fragment">Anticiper aspects juridiques, éthiques, réglementaires (données personnelles, exigences des financeurs)</li>
+<li class="fragment">Organiser la conservation à long terme</li>
+</ul>
+<aside class="notes">
+<p>C’est aussi un document <strong>administratif</strong> : le PGD fait par exemple partie des livrables de tout projet financé par l’ANR ou la Commission Européenne, très tôt dans le déroulé du projet (à 6 mois).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="les-principes-fair" class="slide level2">
+<h2>Les principes FAIR</h2>
+<p>FAIR est un acronyme formé à partir des initiales de quatre concepts :</p>
+<ul>
+<li class="fragment"><strong>F</strong> comme Findability (<em>facile à trouver</em>)</li>
+<li class="fragment"><strong>A</strong> comme Accessibility (<em>accessible</em>)</li>
+<li class="fragment"><strong>I</strong> comme Interoperability (<em>interopérable</em>)</li>
+<li class="fragment"><strong>R</strong> comme Reusability (<em>réutilisable</em>)</li>
+</ul>
+<div class="fragment">
+<p>Chacun de ces concepts peut se décliner en un ensemble de conseils et de bonnes pratiques, détaillés dans le document de la diapo suivante <span class="citation" data-cites="urfistmediterranneeDoRANumEnjeuxBeneficesPrincipes2019">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Urfist Méditerrannée 2019</a>)</span>.</p>
+</div>
+</section>
+<section id="section-10" class="slide level2">
+<h2></h2>
+<div style="width: 100%;">
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;">
+<iframe title="Les principes FAIR" frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/5d64fbbd8352350fa3d22603" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all">
+</iframe>
+</div>
+</div>
+</section>
+<section id="où-déposer-ses-données" class="slide level2">
+<h2>Où déposer ses données ?</h2>
+<p>On appelle «&nbsp;entrepôts de données&nbsp;» les plateformes permettant de stocker, décrire et diffuser des jeux de données.</p>
+<p>Ces entrepôts sont généralement à dominante :</p>
+<ul>
+<li class="fragment"><p>disciplinaire (<a href="https://nakala.fr/">Nakala</a> pour les SHS et Humanités, <a href="https://www.ortolang.fr/fr/accueil/">ORTOLANG</a> spécialisé dans les corpus linguistiques)</p></li>
+<li class="fragment"><p>ou généralistes (comme <a href="https://entrepot.recherche.data.gouv.fr/dataverse/root/?q=">Recherche Data Gouv</a>, destiné aux chercheurs·ses français·es).</p></li>
+<li class="fragment"><p>Pour vous repérer parmi tous les entrepôts, vous pouvez vous référer à <a href="https://doranum.fr/shs-pluridisciplinaire/exemples-d-entrepots-de-donnees-en-sciences-humaines-et-sociales_10_13143_ggz2-gz15/">cette ressource</a> sur la plateforme de formation DORANum, ou la consulter directement depuis la diapo suivante.</p></li>
+</ul>
+</section>
+<section id="section-11" class="slide level2">
+<h2></h2>
+<div style="width: 100%;">
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;">
+<iframe title="Annuaire entrepôts" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6374b9aa935dc500185afd9e" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all">
+</iframe>
+</div>
+</div>
+</section></section>
+<section>
+<section id="et-maintenant" class="title-slide slide level1 center">
+<h1>Et maintenant ?</h1>
+
+</section>
+<section id="vos-interlocuteurs-pour-toute-question-sur-la-science-ouverte" class="slide level2">
+<h2>Vos interlocuteurs pour toute question sur la Science Ouverte</h2>
+<ul>
+<li class="fragment">Bibliothèques de votre université
+<ul>
+<li class="fragment">à l’UVSQ :
+<ul>
+<li class="fragment"><script type="text/javascript">
+<!--
+h='&#x75;&#118;&#x73;&#x71;&#46;&#102;&#114;';a='&#64;';n='&#x73;&#x65;&#114;&#x73;&#x6f;&#46;&#98;&#x69;&#98;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>serso.bib at uvsq dot fr</noscript> -&gt; questions générales sur la science ouverte</li>
+<li class="fragment"><script type="text/javascript">
+<!--
+h='&#x75;&#118;&#x73;&#x71;&#46;&#102;&#114;';a='&#64;';n='&#104;&#x61;&#108;&#46;&#98;&#x69;&#98;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>hal.bib at uvsq dot fr</noscript> -&gt; questions sur HAL</li>
+<li class="fragment"><script type="text/javascript">
+<!--
+h='&#x75;&#118;&#x73;&#x71;&#46;&#102;&#114;';a='&#64;';n='&#116;&#104;&#x65;&#x73;&#x65;&#x73;&#46;&#100;&#x6f;&#x63;&#116;&#x6f;&#114;&#x61;&#116;&#46;&#98;&#x69;&#98;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>theses.doctorat.bib at uvsq dot fr</noscript> -&gt; sur vos thèses</li>
+</ul></li>
+</ul></li>
+<li class="fragment">Atelier de la Donnée Paris-Saclay :
+<ul>
+<li class="fragment"><script type="text/javascript">
+<!--
+h='&#x75;&#110;&#x69;&#118;&#x65;&#114;&#x73;&#x69;&#116;&#x65;&#x2d;&#112;&#x61;&#114;&#x69;&#x73;&#x2d;&#x73;&#x61;&#x63;&#108;&#x61;&#x79;&#46;&#102;&#114;';a='&#64;';n='&#100;&#x6f;&#110;&#110;&#x65;&#x65;&#x73;&#x2d;&#114;&#x65;&#x63;&#104;&#x65;&#114;&#x63;&#104;&#x65;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>donnees-recherche at universite-paris-saclay dot fr</noscript> -&gt; questions sur la gestion de vos données de recherche</li>
+</ul></li>
+</ul>
+</section>
+<section id="formations-doctorales" class="slide level2 center">
+<h2>Formations doctorales</h2>
+<ul>
+<li class="fragment">Formations doctorales communes aux 3 universités, toute l’année</li>
+<li class="fragment">Liste complète prochainement sur <strong>ADUM</strong></li>
+</ul>
+<aside class="notes">
+<p>Sur la plupart des sujets que j’ai abordé, et sur bien d’autres par ailleurs, des formations (communes aux 3 universités) sont organisées toute l’année dans le cadre des formations doctorales. La liste complète sera bientôt disponible sur ADUM, mais je vous mets ici le programme prévisionnel qui ne devrait pas changer (pas de date précise pour l’instant, en revanche).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="recherche-documentaire" class="slide level2 scrollable">
+<h2>Recherche documentaire</h2>
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Désignation</th>
+<th style="text-align: right;">Durée (heures)</th>
+<th style="text-align: right;">Crédit</th>
+<th style="text-align: right;">Sessions/an (FR)</th>
+<th style="text-align: right;">Sessions/an (EN)</th>
+<th style="text-align: right;">Places max./session</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Veille documentaire</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">12-15</td>
+</tr>
+<tr class="even">
+<td>Zotero – Initiation</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="odd">
+<td>Zotero – Initiation + avancé</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td>Bibliométrie</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">20</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="publication" class="slide level2 scrollable">
+<h2>Publication</h2>
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Désignation</th>
+<th style="text-align: right;">Durée (heures)</th>
+<th style="text-align: right;">Crédit</th>
+<th style="text-align: right;">Sessions/an (FR)</th>
+<th style="text-align: right;">Sessions/an (EN)</th>
+<th style="text-align: right;">Places max./session</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Publication traditionnelle et initiation à la rédaction d’un article scientifique</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2 (1/disc.)</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr class="even">
+<td>Publication en science ouverte – Panorama</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="odd">
+<td>Publication en science ouverte – HAL &amp; édition diamant</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td>Publication en science ouverte – Voie dorée</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="odd">
+<td>Identité numérique</td>
+<td style="text-align: right;">3-4</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">12-15</td>
+</tr>
+<tr class="even">
+<td>Droit d’auteur &amp; licences juridiques</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr class="odd">
+<td>Brevets &amp; propriété intellectuelle</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr class="even">
+<td>Dépôt de la thèse</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">20</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="données-de-la-recherche" class="slide level2 scrollable">
+<h2>Données de la recherche</h2>
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Désignation</th>
+<th style="text-align: right;">Durée (heures)</th>
+<th style="text-align: right;">Crédit</th>
+<th style="text-align: right;">Sessions/an (FR)</th>
+<th style="text-align: right;">Sessions/an (EN)</th>
+<th style="text-align: right;">Places max./session</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Gestion des données de recherche - SHS</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Gestion des codes et logiciels</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="odd">
+<td>SPOC Données</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">Sans limitation</td>
+</tr>
+<tr class="even">
+<td>Atelier Data Papers</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="odd">
+<td>Looking for Data</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td>Kit de démarrage pour la fouille de textes</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">12-15</td>
+</tr>
+<tr class="odd">
+<td>Faire ses humanités numériques (1) : notions d’informatique pour les Lettres et Sciences Humaines</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">12-15</td>
+</tr>
+<tr class="even">
+<td>Faire ses humanités numériques (2) : initialisation à la modélisation de données</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">12-15</td>
+</tr>
+<tr class="odd">
+<td>Omeka S</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0,5</td>
+<td style="text-align: right;">1 à 2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">12</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ia-iag-et-information-scientifique-et-technique" class="slide level2 scrollable">
+<h2>IA, IAG et information scientifique et technique</h2>
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Désignation</th>
+<th style="text-align: right;">Durée (heures)</th>
+<th style="text-align: right;">Crédit</th>
+<th style="text-align: right;">Sessions/an (FR)</th>
+<th style="text-align: right;">Sessions/an (EN)</th>
+<th style="text-align: right;">Places max./session</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Intelligence artificielle et information scientifique et technique (titre provisoire)</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0,5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">20</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="journée-spécifique-open-science-week" class="slide level2 scrollable">
+<h2>Journée spécifique Open Science Week</h2>
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Désignation</th>
+<th style="text-align: right;">Durée (heures)</th>
+<th style="text-align: right;">Crédit</th>
+<th style="text-align: right;">Sessions/an (FR)</th>
+<th style="text-align: right;">Sessions/an (EN)</th>
+<th style="text-align: right;">Places max./session</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Science ouverte, publications et données</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">25</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="bibliographie" class="slide level2 smaller scrollable">
+<h2>Bibliographie</h2>
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-anheimLeditionSciencesHumaines2020b" class="csl-entry" role="listitem">
+Anheim, Étienne, et Livia Foraison. 2020. <span>«&nbsp;<span>L’édition en sciences humaines et sociales, un bien commun</span>&nbsp;»</span>. In <em><span>L’édition en sciences humaines et sociales : Enjeux et défis</span></em>. <span>Cas de figure</span>. Éditions de l’École des hautes études en sciences sociales. <a href="https://doi.org/10.4000/books.editionsehess.28753">https://doi.org/10.4000/books.editionsehess.28753</a>.
+</div>
+<div id="ref-bastinOpenScienceWelcome2026" class="csl-entry" role="listitem">
+Bastin, Myriam, Cecile Dohogne, Maurane Raskinet, et Sébastien Hoyas. 2026. <em>Open <span>Science Welcome Kit</span></em>. octobre. <a href="https://doi.org/10.5281/zenodo.23398583">https://doi.org/10.5281/zenodo.23398583</a>.
+</div>
+<div id="ref-butlerOligopolysShiftOpen2023" class="csl-entry" role="listitem">
+Butler, Leigh-Ann, Lisa Matthias, Marc-André Simard, Philippe Mongeon, et Stefanie Haustein. 2023. <span>«&nbsp;The Oligopoly’s Shift to Open Access: <span>How</span> the Big Five Academic Publishers Profit from Article Processing Charges&nbsp;»</span>. <em>Quantitative Science Studies</em> 4 (4): 778‑99. <a href="https://doi.org/10.1162/qss_a_00272">https://doi.org/10.1162/qss_a_00272</a>.
+</div>
+<div id="ref-chartronStructureDefisEconomiques2020" class="csl-entry" role="listitem">
+Chartron, Ghislaine. 2020. <span>«&nbsp;<span>Structure et défis économiques de l’édition</span>&nbsp;»</span>. In <em><span>L’édition en sciences humaines et sociales : Enjeux et défis</span></em>. <span>Cas de figure</span>. Éditions de l’École des hautes études en sciences sociales. <a href="https://doi.org/10.4000/books.editionsehess.28973">https://doi.org/10.4000/books.editionsehess.28973</a>.
+</div>
+<div id="ref-HALFormationCategories" class="csl-entry" role="listitem">
+Communication Scientifique Directe (CCSD), Centre pour la. 2026. <span>«&nbsp;<span>HAL Formation</span> | <span>Catalogue</span> de Ressources et Formations Juridiques&nbsp;»</span>. <a href="https://learning.hal.science/course/index.php?customfieldselected=besoin&amp;customfieldvalue=3&amp;categoryid">https://learning.hal.science/course/index.php?customfieldselected=besoin&amp;customfieldvalue=3&amp;categoryid</a>.
+</div>
+<div id="ref-gingrasTransformationsProductionSavoir2018" class="csl-entry" role="listitem">
+Gingras, Yves. 2018. <span>«&nbsp;<span>Les transformations de la production du savoir : de l’unité de connaissance à l’unité comptable</span>&nbsp;»</span>. <em>Zilsel</em> 4 (2): 139‑52. <a href="https://doi.org/10.3917/zil.004.0139">https://doi.org/10.3917/zil.004.0139</a>.
+</div>
+<div id="ref-laboulaisDenaturaliserScienceOuverte2023" class="csl-entry" role="listitem">
+Laboulais, Isabelle. 2023. <span>«&nbsp;<span>Dénaturaliser la science ouverte : La genèse d’un savoir d’institution</span>&nbsp;»</span>. <em>Zilsel</em> 12 (1): 11‑28. <a href="https://doi.org/10.3917/zil.012.0011">https://doi.org/10.3917/zil.012.0011</a>.
+</div>
+<div id="ref-lariviereOligopolyAcademicPublishers2015" class="csl-entry" role="listitem">
+Larivière, Vincent, Stefanie Haustein, et Philippe Mongeon. 2015. <span>«&nbsp;The <span>Oligopoly</span> of <span>Academic Publishers</span> in the <span>Digital Era</span>&nbsp;»</span>. <em>PLOS ONE</em> 10 (6): e0127502. <a href="https://doi.org/10.1371/journal.pone.0127502">https://doi.org/10.1371/journal.pone.0127502</a>.
+</div>
+<div id="ref-mounierPlateformesDiffusionNumerique2020" class="csl-entry" role="listitem">
+Mounier, Pierre. 2020. <span>«&nbsp;<span>Les plateformes de diffusion numérique, un enjeu politique</span>&nbsp;»</span>. In <em><span>L’édition en sciences humaines et sociales : Enjeux et défis</span></em>. <span>Cas de figure</span>. Éditions de l’École des hautes études en sciences sociales. <a href="https://doi.org/10.4000/books.editionsehess.28843">https://doi.org/10.4000/books.editionsehess.28843</a>.
+</div>
+<div id="ref-suberQuestceQueLacces2016" class="csl-entry" role="listitem">
+Suber, Peter. 2016. <em><span>Qu’est-ce que l’accès ouvert ?</span></em> <span>Encyclopédie numérique</span>. OpenEdition Press. <a href="https://doi.org/10.4000/books.oep.1600">https://doi.org/10.4000/books.oep.1600</a>.
+</div>
+<div id="ref-urfistmediterranneeDoRANumEnjeuxBeneficesPrincipes2019" class="csl-entry" role="listitem">
+Urfist Méditerrannée. 2019. <em><span>DoRANum - Enjeux</span> et Bénéfices : Les Principes <span>FAIR</span></em>. DoRANum. <a href="https://doi.org/10.13143/Z7S6-ED26">https://doi.org/10.13143/Z7S6-ED26</a>.
+</div>
+</div>
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-fullscreen/fullscreen.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'print',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1600,
+
+        height: 900,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealFullscreen, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copié");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copié");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+                // target, if specified
+                link.setAttribute("target", "_blank");
+                if (link.getAttribute("rel") === null) {
+                  link.setAttribute("rel", "noopener");
+                }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
